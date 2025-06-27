@@ -5,4 +5,4 @@ Aqui você encontra informações sobre mim, meus projetos, habilidades e formas
 
 ## 📍 Acesse o site
 
-🖱️ [Clique aqui para visitar](https://julianafurlan.github.io/Portfolio)
+🖱️ [Clique aqui para visitar](https://julianafurlan.github.io/Portfolio/)
