@@ -144,6 +144,55 @@ button:hover {
     background-color: rgb(130, 65, 18); 
 }
 
+/* Seção do link do site */
+#link-site {
+background:  #FF9C00;
+padding: 50px 20px;
+text-align: center;
+border-radius: 20px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+max-width: 1300px;
+margin: 50px auto;
+font-family: 'Poppins', sans-serif;
+}
+
+#link-site h2 {
+font-size: 2rem;
+color: #fff;
+margin-bottom: 20px;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#link-site ul {
+list-style: none;
+padding: 0;
+}
+
+#link-site li {
+margin: 15px 0;
+}
+
+#link-site a {
+display: inline-block;
+font-size: 1.2rem;
+font-weight: bold;
+text-decoration: none;
+color: #FF9C00;
+background-color: #fff;
+padding: 12px 25px;
+border-radius: 30px;
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+transition: all 0.3s ease;
+}
+
+#link-site a:hover {
+background-color: rgb(130, 65, 18);
+color: #fff;
+transform: scale(1.05);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
 footer {
     background-color: #FF9C00;
     color: white;
