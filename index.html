@@ -1,75 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla&display=swap">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#relatorios">Relatórios</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="sobre">
-        <h1>Sobre Mim</h1>
-        <div class="foto-container">
-            <img src="https://avatars.githubusercontent.com/u/10983643?s=280&v=4" alt="Logo da Faculdade" class="foto">
-            <img src="minhaFoto.jpg" alt="Minha Foto" class="foto">
+<header>
+    <h1>Projeto de Extensão</h1>
+    <nav>
+        <ul>
+            <li><a href="#projeto">O Projeto</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#autora-contato">Autora & Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-content">
+        <h2>Recordações — Pensamento Computacional</h2>
+        <p>Website desenvolvido como parte do projeto de extensão UniFil 2025.</p>
+    </div>
+
+    <!-- IMAGEM CLICÁVEL -->
+    <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank" class="hero-link">
+        <img src="fotoSite.png" alt="Imagem do site" class="hero-img">
+    </a>
+            <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank" class="botao-hero">
+            Acessar o Site
+        </a>
+</section>
+
+<!-- O PROJETO -->
+<section id="projeto">
+    <h2>Sobre o Projeto</h2>
+
+    <p class="descricao-projeto">
+        O projeto de extensão “Recordações — Pensamento Computacional” teve como objetivo criar
+        uma plataforma digital interativa reunindo atividades, depoimentos e conteúdos relacionados
+        ao curso de Pensamento Computacional oferecido na UniFil.
+        O site foi projetado para ser leve, intuitivo, acessível e visualmente agradável.
+    </p>
+
+    <div class="galeria">
+        <img src="images/print1.png" alt="">
+        <img src="images/print2.png" alt="">
+        <img src="images/print3.png" alt="">
+    </div>
+</section>
+
+<!-- RELATÓRIOS -->
+<section id="relatorios">
+    <h2>Relatórios do Projeto</h2>
+
+    <div class="cards-relatorios">
+        <a class="card" href="relatorios/relatorio1.pdf" target="_blank">
+            <h3>Relatório 1</h3>
+            <p>Visão Informal</p>
+        </a>
+
+        <a class="card" href="relatorios/relatorio2.pdf" target="_blank">
+            <h3>Relatório 2</h3>
+            <p>MVP + Caso de Uso</p>
+        </a>
+
+        <a class="card" href="relatorios/relatorio3.pdf" target="_blank">
+            <h3>Relatório 3</h3>
+            <p>DER + Implantação</p>
+        </a>
+    </div>
+</section>
+
+<!-- AUTORA + CONTATO LADO A LADO -->
+<section id="autora-contato">
+    <div class="dupla-container">
+
+        <div class="sobre-box">
+            <h2>Sobre a Autora</h2>
+            <img src="minhaFoto.jpg" class="foto-perfil">
+            <p>
+                Meu nome é <strong>Juliana Furlan</strong> e sou estudante de Ciência da Computação na UniFil.  
+                Desenvolvi este portfólio para apresentar meu trabalho no projeto de extensão de Pensamento Computacional,
+                incluindo o site final e os relatórios produzidos.
+            </p>
         </div>
-        <p>Olá! Meu nome é <strong> Juliana Furlan</strong>  e sou estudante de Ciência da Computação, curso no qual ingressei em 2024 na UniFil. Para mim, programar vai muito além de apenas escrever códigos, é uma forma de expressão e criatividade, onde cada linha pode dar vida a algo novo e funcional. Além disso, a computação me permite desenvolver um raciocínio lógico mais apurado e trabalhar com desafios que exigem pensamento estratégico.. Aqui, compartilho meus relatórios e materiais, registrando minha trajetória e aprendizados ao longo da minha jornada na computação.</p>
-    </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="https://formspree.io/f/meoqorbn" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-    
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-    <section id="relatorios">
-    <h2>Relatórios em PDF</h2>
-    <div class="relatorio">
-        <h3>Relatório 1 - Visão Informal</h3>
-        <embed src="relatorios/relatorio1.pdf" type="application/pdf" width="100%" height="1000px">
-    </div>
-    <div class="relatorio">
-        <h3>Relatório 2 - MVP e Caso de Uso</h3>
-        <embed src="relatorios/relatorio2.pdf" type="application/pdf" width="100%" height="1000px">
-    </div>
-    <div class="relatorio">
-        <h3>Relatório 3 - DER, Diagrama de implantação + workflow</h3>
-        <embed src="relatorios/relatorio3.pdf" type="application/pdf" width="100%" height="1000px">
-    </div> 
-</section>
-<section id="link-site">
-    <div class="container">
-    <h2>Link do site final: Recordações Pensamento Computacional</h2>
-    <ul>
-        <li><a href="https://eduardo-luis-alonso-art.github.io/RecordacoesPC/" target="_blank">Recordações Pensamento Computacional</a></li>
-    </ul>
+        <div class="contato-box">
+            <h2>Entre em Contato</h2>
+            <form action="https://formspree.io/f/meoqorbn" method="POST">
+                <label>Nome</label>
+                <input type="text" name="nome" required>
+
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
     </div>
 </section>
-<section id="footer">
-    <footer>
-        <p>&copy; 2024 Juliana Furlan. Todos os direitos reservados.</p>
-    </footer>
-</section>
+
+<footer>
+    © 2025 Projeto de Extensão — Pensamento Computacional | Desenvolvido por Juliana Furlan
+</footer>
+
 </body>
 </html>
