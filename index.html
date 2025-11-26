@@ -1,117 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Pensamento Computacional</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <header>
+        <h1>Portfólio – Pensamento Computacional</h1>
+    </header>
 
-<header>
-    <h1>Projeto de Extensão</h1>
-    <nav>
-        <ul>
-            <li><a href="#projeto">O Projeto</a></li>
-            <li><a href="#relatorios">Relatórios</a></li>
-            <li><a href="#autora-contato">Autora & Contato</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="container">
 
-<!-- HERO -->
-<section id="hero">
-    <div class="hero-content">
-        <h2>Recordações — Pensamento Computacional</h2>
-        <p>Website desenvolvido como parte do projeto de extensão UniFil 2025.</p>
-    </div>
+        <div class="projeto">
+            <div style="display:flex; gap:25px; align-items:center; flex-wrap:wrap;">
+                <div style="flex:1; min-width:260px;">
+                    <h2>Sobre o Projeto</h2>
+                    <p>
+O projeto de extensão “Recordações — Pensamento Computacional” teve como objetivo criar uma plataforma digital interativa reunindo atividades, depoimentos e conteúdos relacionados ao curso de Pensamento Computacional oferecido na UniFil.</p>
+                    <a class="projeto-link" href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank">Acessar o Projeto</a>
+                </div>
 
-    <!-- IMAGEM CLICÁVEL -->
-    <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank" class="hero-link">
-        <img src="fotoSite.png" alt="Imagem do site" class="hero-img">
-    </a>
-            <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank" class="botao-hero">
-            Acessar o Site
-        </a>
-</section>
+                <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank" style="flex:1; min-width:260px;">
+                    <img src="fotoSite.png" alt="Prévia do site" style="width:100%; border-radius:15px; border:6px solid #ff9ad6; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; cursor:pointer;">
+                </a>
+            </div>
+        </div>
 
-<!-- O PROJETO -->
-<section id="projeto">
-    <h2>Sobre o Projeto</h2>
-
-    <p class="descricao-projeto">
-        O projeto de extensão “Recordações — Pensamento Computacional” teve como objetivo criar
-        uma plataforma digital interativa reunindo atividades, depoimentos e conteúdos relacionados
-        ao curso de Pensamento Computacional oferecido na UniFil.
-        O site foi projetado para ser leve, intuitivo, acessível e visualmente agradável.
-    </p>
-
-    <div class="galeria">
-        <img src="images/print1.png" alt="">
-        <img src="images/print2.png" alt="">
-        <img src="images/print3.png" alt="">
-    </div>
-</section>
-
+        <div class="baixo">
 <!-- RELATÓRIOS -->
-<section id="relatorios">
-    <h2>Relatórios do Projeto</h2>
-
-    <div class="cards-relatorios">
-        <a class="card" href="relatorios/relatorio1.pdf" target="_blank">
-            <h3>Relatório 1</h3>
-            <p>Visão Informal</p>
-        </a>
-
-        <a class="card" href="relatorios/relatorio2.pdf" target="_blank">
-            <h3>Relatório 2</h3>
-            <p>MVP + Caso de Uso</p>
-        </a>
-
-        <a class="card" href="relatorios/relatorio3.pdf" target="_blank">
-            <h3>Relatório 3</h3>
-            <p>DER + Implantação</p>
-        </a>
+    <div class="card">
+        <h2>Relatórios</h2>
+            <p>Clique nas imagens para abrir os PDFs.</p>
+            <div class="relatorios-grid">
+                <a href="relatorios/relatorio1.pdf" target="_blank">📄 Relatório 1 – Introdução ao Projeto</a>
+                <a href="relatorios/relatorio2.pdf" target="_blank">📄 Relatório 2 – MVP e caso de Uso</a>
+                <a href="relatorios/relatorio3.pdf" target="_blank">📄 Relatório 3 – DER, Diagrama de implantação + workflow</a>
+            </div>
     </div>
-</section>
-<!-- AUTORA & CONTATO -->
-<section id="autora-contato">
-    <h2>Autora & Contato</h2>
 
-    <div class="dupla-container">
+            <div class="sobre-mim">
+                <h2>Sobre Mim</h2>
+                <div style="display:flex; gap:20px; align-items:center; flex-wrap:wrap;">
+                    <img src="minhaFoto.jpg" alt="Minha foto" style="width:130px; height:130px; border-radius:50%; object-fit:cover; border:4px solid #ffb4db; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
 
-        <!-- SOBRE A AUTORA -->
-        <div class="sobre-box">
-            <h3>Sobre a Autora</h3>
-            <img src="minhaFoto.jpg" alt="Foto da Autora" class="foto-perfil">
-            <p>
-                Meu nome é <strong>Juliana Furlan</strong>, estudante de Computação na UniFil e 
-                integrante do projeto de extensão responsável pelo site 
-                <em>Recordações — Pensamento Computacional</em>.
-            </p>
-            <p>
-                Tenho interesse em desenvolvimento web, design e tecnologias educacionais.  
-                Este portfólio reúne os materiais e resultados do projeto.
-            </p>
+                    <p style="flex:1; min-width:220px;">
+                        Meu nome é Juliana Furlan, estudante de Computação na UniFil e responsável pelo site Recordações — Pensamento Computacional. Este portfólio reúne os materiais e resultados do projeto.                    </p>
+                </div>
+
+                <div class="links">
+                    <a href="https://github.com/JulianaFurlan" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/julianafurlanc" target="_blank">LinkedIn</a>
+                    <a href="https://julianafurlan.github.io/PensamentoComputacional/" target="_blank">Meu Site</a>
+                </div>
+            </div>
+            </div>
         </div>
 
-        <!-- CONTATO -->
-        <div class="contato-box">
-            <h3>Entre em Contato</h3>
-            <form action="#" method="post">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea rows="5" placeholder="Sua mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2025 Projeto de Extensão — Pensamento Computacional | Desenvolvido por Juliana Furlan
-</footer>
-
+    </section>
+    <footer style="text-align:center; padding:25px; margin-top:50px; background:rgba(255,235,245,0.6); backdrop-filter:blur(6px); color:#944c71; border-top:1px solid #f7b9d5;">
+        por Juliana © 2025
+    </footer>
 </body>
 </html>
